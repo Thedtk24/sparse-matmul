@@ -44,7 +44,7 @@ spMatrice_t* csr_mult_seq(spMatrice_t* matA, spMatrice_t* matB){
 
         for(int j = 0; j < matB -> colonnes; j++){
             if(flag[j]){
-                int index = matC -> ptr_lignes[i] + (matC -> nb_vnn - matC -> ptr_lignes[i]);
+                //int index = matC -> ptr_lignes[i] + (matC -> nb_vnn - matC -> ptr_lignes[i]);
                 matC -> valeurs[matC -> nb_vnn] = temp[j];
                 matC -> index_colonnes[matC -> nb_vnn] = j;
                 matC -> nb_vnn++;
