@@ -44,7 +44,7 @@ spMatrice_t* charger_matrice_txt(const char* chemin){
 
     int i, j;
     double val;
-    long pos = ftell(f);
+    //long pos = ftell(f);
 
     for(int k = 0; k < mat -> nb_vnn; k++){
         if(fscanf(f, "%d %d %lf", &i, &j, &val) != 3){
