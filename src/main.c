@@ -42,7 +42,6 @@ int main(int argc, char *argv[]){
     double temps_par = difference_temps(debut, fin);
     printf("Multiplication parallèle (%d threads) : %.6f s\n", nb_threads, temps_par);
 
-    /* Speedup */
     double speedup = temps_seq / temps_par;
     printf("Speedup : %.2fx\n", speedup);
 
