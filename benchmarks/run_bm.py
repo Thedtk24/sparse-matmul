@@ -6,7 +6,7 @@ import os
 os.makedirs("reports", exist_ok=True)
 
 sizes = [500, 5000, 10000, 20000, 30000]
-nb_threads = 4
+nb_threads = 8
 results = []
 
 for n in sizes:
